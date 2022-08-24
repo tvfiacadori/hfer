@@ -1,0 +1,554 @@
+/* reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CONF IMPORTANTE PARA RESPONSIVO */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* HEADER*/ 
+
+header{
+
+    background-color: #154286;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+ address a{
+    color: #fcfffb;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+address{
+border: 1px solid white;
+border-radius: 5px;
+padding: 15px 15px 15px;
+}
+
+address ul li a{
+line-height: 1.4em;
+}
+
+.address{
+margin-right: 10px;
+color: #fcfcfc;
+font-weight: bold;
+}
+
+/* MENU */
+#fuckmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ver a possibilidade de fazer um position:stick no menu */
+
+#fuckmenu{
+    position: stricky;
+    top: 20px;
+}
+
+#fuckmenu .menu{
+    width: auto;
+    margin-top: -20px;
+    margin-bottom: -42px;
+    background-color:#55505C;
+    padding: 15px;
+    border-radius: 17px;
+    /* margin: 0px 0px 0px 0px; */
+    
+}
+
+.menu a{
+    font-weight: 250;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fcfffb;
+}
+
+.menu ul{
+    text-align: center;
+    padding: 10px;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+a:visited{
+    background-color: #154286;
+}
+
+.menu a:hover {
+    background-color: #154286;
+    padding: 11px;
+}
+li .call-action{
+    background: #154286;
+    padding: 18px;
+    border-radius: 7px;  
+}
+
+li .call-action:hover{
+background-color:#ff08086e;
+
+}
+/* main banner */
+
+.banner {
+    background-image: url('img/hfer.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+/* pensar um jeito de fazer bonito esse H1 */
+
+.banner-hfer h1{
+position: stricky;
+color: #fff;
+text-shadow: 2px 2px #000;
+font-size: 40px;
+font-weight: 700;
+text-transform: none;
+/* line-height: 1.2em; */
+text-transform: uppercase;
+background:#154286;
+}
+
+/* block 2 */
+
+#block2{
+    padding-top: 27px;
+    padding-bottom: 50px;
+    width: 80%;
+    height: 500%;
+    display: flex;
+    margin: auto;
+    
+}
+
+.test1 h2{
+    font-size: 30px;
+    color: dimgrey;
+    font-weight: 700;
+    text-shadow: 5px 8px #99a8b507;
+    text-transform: uppercase;
+    padding-right: 10px;
+    margin: 25px;
+    text-align: justify;
+    padding-bottom: 28px;
+    
+    
+}
+    
+
+.semibold{
+    color: dimgrey;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    margin: 19px;
+    padding: 21px;
+    border-radius: 7px;
+    border: 1px solid rgba(105, 105, 105, 0.22);
+    position: relative;
+    }
+
+.test1 .semibold::before{
+        content: '';
+        position: absolute;
+        border: 1px solid rgba(105, 105, 105, 0.128);
+        box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.386);
+        border-radius: 7px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: rotateZ(2deg);
+        z-index: -1;
+}
+
+.test2 p{
+    margin-top: 29px;
+    font-size: 20px;
+    padding: 8px;
+    color: dimgrey;
+}
+
+
+
+
+/* BLOCK 3 */
+
+.block3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #154286;
+    width: 100%;
+    margin: auto;
+    padding: 30px; 
+    margin-bottom: 50px; 
+    margin-top: 50px;
+}
+
+span{
+    font-size: 25px;
+    color: #fcfcfc;
+    font-weight: 500;
+}
+
+/* BUTTON PERSO */
+
+button{
+    font-size: 25px;
+    font-weight: 500;
+    min-width: 130px;
+    text-transform: uppercase;
+    height: 60px;
+    color: #154286;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #fcfffb;
+}
+
+  button:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+  button:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+  }
+  /* h2 perdido no mundo */
+
+    .solo{
+        margin-top: 40px;
+        margin-left: 239px;
+        margin-bottom: 30px;
+        font-size: 45px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: dimgrey;
+    }
+
+  /* Block 4 */
+
+  #block4{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+  }
+
+  figure{
+    border-radius: 30px;
+    box-shadow: 0px 0px 16px 2px rgba(0, 0, 0, 0.184);
+    overflow: hidden;
+    width: 200px;
+    margin: 12px;
+  }
+
+  #block4 img{
+    width: 100%;
+    height: 150px;
+  }
+
+  figcaption{
+    padding: 25px 30px 30px 30px;
+    text-align: center;
+    font-size: 20px;
+    color: #fcfffb;
+    background: #154286;
+    
+  }
+
+  figure:hover {
+    cursor:grab;
+    transform: scale(1.1);
+    box-shadow:0 0 20px #154286;
+  }
+
+  /* BLOCK 6 */
+
+  .block6{
+    padding-top: 27px;
+    padding-bottom: 50px;
+    width: 80%;
+    height: 500%;
+    display: flex;
+    margin: auto;
+    
+}
+
+.block6{
+    padding-top: 27px;
+    padding-bottom: 50px;
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+
+.block6 img{
+    /* display: flex; */
+    width: 200px;
+    margin-left: 30%;
+
+
+}
+
+.block6 h2{
+    font-size: 30px;
+    color: dimgrey;
+    font-weight: 700;
+    text-shadow: 5px 8px #99a8b507;
+    text-transform: uppercase;
+    padding-right: 10px;
+    margin: 25px;
+    text-align: justify;
+    padding-bottom: 28px;  
+}  
+
+.semibold-2{
+    color: dimgrey;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
+    margin: 19px;
+    padding: 21px;
+    border-radius: 7px;
+    border: 1px solid rgba(105, 105, 105, 0.22);
+    /* position: relative; */
+    }
+
+/* BLOCK 6 THE END */
+
+footer{
+    background: #154286;
+    height: 202px;
+    
+}
+.atendimento{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px;
+    padding-top: 1%;
+
+}
+
+.footer{
+    color:#fcfcfc;
+    text-decoration: none;
+    border: 0;
+}
+
+.atendimento div{
+    font-size: 20x;
+    color: #fcfcfc;
+    line-height: 20px;
+    
+}
+
+
+
+footer p{
+    color: #fcfcfc;
+}
+footer p img{
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.talita{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: -69px;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+/* media query testando */
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        width: auto;
+        height: 300px;
+    
+    }
+
+    header .logo{
+        width: auto;
+        margin-top: 20%;
+    }
+
+    .information address{
+        width: auto;
+        margin-bottom: 150px;
+        
+    }
+
+    .address { 
+        font-size: 16px;
+    }
+
+
+    #fuckmenu{
+        position: relative;
+        margin-top: -40px;
+        top: 29px;
+
+    }
+
+    #fuckmenu ul li{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+    }
+
+        
+        
+    #block2 h2{
+        text-align: left;
+        font-size: 40px;
+        
+    }
+
+
+    
+    button{
+        width:auto;
+        height: 100%;
+        font-size: 18px;
+
+    }
+
+    .solo {
+        margin-left: 59px;
+        
+    }
+
+    .block3 span{
+        margin-left: 10px;
+    }
+
+    .block4 {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .block6{
+        display: block;
+    }
+}
+
+
+    
+
+
+
+
+
